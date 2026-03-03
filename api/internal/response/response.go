@@ -33,19 +33,18 @@ func Error(w http.ResponseWriter, status int, message string) {
 }
 
 func Paginated(w http.ResponseWriter, data any, page, limit, total int) {
-	but
 	totalPages := 0
 	if limit > 0 {
 		totalPages = (total + limit - 1) / limit
 	}
 
 	JSON(w, http.StatusOK, PaginatedResponse{
-		Date:       data,
+		Data:       data,
 		Page:       page,
 		Limit:      limit,
 		Total:      total,
 		TotalPages: totalPages,
-		hasNext:    page < totalPages,
-		hasPrev:    page > 1,
+		HasNext:    page < totalPages,
+		HasPrev:    page > 1,
 	})
 }
