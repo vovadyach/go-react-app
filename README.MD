@@ -1,6 +1,10 @@
-# Go REST API
+# Go Admin Panel
 
-Building paginated REST API with dynamic filtering and sorting for user and post management
+Paginated REST API with a React admin dashboard for managing users and posts.
+
+![Go](https://img.shields.io/badge/Go-1.26-00ADD8?logo=go&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-336791?logo=postgresql&logoColor=white)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
 
 ## Tech Stack
 
